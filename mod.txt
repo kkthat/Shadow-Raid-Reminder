@@ -1,0 +1,25 @@
+{
+    "name": "Shadow Raid Reminder",
+    "description": "Reminds you to block the heli spawn.",
+    "author": "kkthat",
+    "image": "icon.png",
+    "version": "1.3",
+    "hooks": [
+        {
+            "hook_id": "lib/entry",
+            "script_path": "mod.lua"
+        },
+        {
+            "hook_id": "lib/utils/game_state_machine/gamestatemachine",
+            "script_path": "lua/GameStateMachineHook.lua"
+        },
+        {
+            "hook_id": "lib/managers/mission/elementareatrigger",
+            "script_path": "lua/ElementAreaTriggerHook.lua"
+        },
+        {
+            "hook_id": "lib/network/base/networkmanager",
+            "script_path": "lua/NetworkHooks.lua"
+        }
+    ]
+}
